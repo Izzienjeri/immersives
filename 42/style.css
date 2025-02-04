@@ -1,0 +1,85 @@
+.chat-history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e1f5fe;
+  max-width: 70%;
+  align-self: flex-end;
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.chat-message.other {
+  background-color: #d1c4e9;
+  align-self: flex-start;
+}
+
+.chat-message .sender {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.chat-message .message {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.4;
+}
+
+.chat-message button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.save-btn {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.chat-history::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 !important;
+  }
+  .card {
+    border-radius: 0;
+  }
+}

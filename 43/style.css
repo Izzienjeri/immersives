@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header h1 {
+  color: #0078d7;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.image-editor-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.image-editor {
+  width: 400px;
+  height: 300px;
+  border: 2px dashed #0078d7;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-editor img {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+.controls label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.sliders input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3 !important;
+}

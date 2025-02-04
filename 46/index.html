@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>21 Game</title>
+    <style>
+      #gameArea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+      }
+      .cards {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .card {
+        width: 70px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      button {
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .label {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="gameArea">
+      <h2>21 Game</h2>
+      <p class="label">Player:</p>
+      <div id="playerCards" class="cards"></div>
+      <p>Player Score: <span id="playerScore">0</span></p>
+      <p>Dealer Score: <span id="dealerScore">0</span></p>
+      <button id="hitButton">Hit (+)</button>
+      <button id="keepButton">Keep (k)</button>
+      <p id="result"></p>
+    </div>
+
+    <script>
+      let playerCards = [];
+      let playerScore = 0;
+      let dealerCards = [];
+      let dealerScore = 0;
+
+      function getRandomCard() {
+        let value = Math.floor(Math.random() * 11) + 1;
+        if (value > 10) {
+          value = 10;
+        }
+        return value;
+      }
+
+      function displayCard(value) {
+        let cardDiv = document.createElement("div");
+        cardDiv.classList.add("card");
+        cardDiv.textContent = value;
+        document.getElementById("playerCards").appendChild(cardDiv);
+      }
+
+      function updateScore() {
+        playerScore = playerCards.reduce((sum, card) => sum + card, 0);
+        document.getElementById("playerScore").textContent = playerScore;
+      }
+
+      function checkResult() {
+        let result = document.getElementById("result");
+
+        while (dealerScore < 17) {
+          dealerCards.push(getRandomCard());
+          updateDealerScore();
+        }
+
+        if (playerScore > 21) {
+          result.textContent = "You Busted! House Wins!";
+        } else if (dealerScore > 21 || playerScore > dealerScore) {
+          result.textContent = "You Win!";
+        } else if (playerScore === dealerScore) {
+          result.textContent = "It's a Tie!";
+        } else {
+          result.textContent = "House Wins!";
+        }
+        resetGame();
+      }
+
+      function updateDealerScore() {
+        dealerScore = dealerCards.reduce((sum, card) => sum + card, 0);
+        document.getElementById("dealerScore").textContent = dealerScore;
+      }
+
+      function resetGame() {
+        setTimeout(() => {
+          playerCards = [];
+          playerScore = 0;
+          dealerCards = [];
+          dealerScore = 0;
+          document.getElementById("playerCards").innerHTML = "";
+          document.getElementById("playerScore").textContent = playerScore;
+          document.getElementById("dealerScore").textContent = dealerScore;
+          document.getElementById("result").textContent = "";
+          document.getElementById("hitButton").disabled = false;
+          document.getElementById("keepButton").disabled = false;
+          startGame();
+        }, 2000);
+      }
+
+      function startGame() {
+        playerCards.push(getRandomCard());
+        playerCards.push(getRandomCard());
+        updateScore();
+        displayCard(playerCards[0]);
+        displayCard(playerCards[1]);
+      }
+
+      document.getElementById("hitButton").addEventListener("click", () => {
+        playerCards.push(getRandomCard());
+        displayCard(playerCards[playerCards.length - 1]);
+        updateScore();
+        if (playerScore >= 21) {
+          checkResult();
+          disableButtons();
+        }
+      });
+
+      document.getElementById("keepButton").addEventListener("click", () => {
+        checkResult();
+        disableButtons();
+      });
+
+      function disableButtons() {
+        document.getElementById("hitButton").disabled = true;
+        document.getElementById("keepButton").disabled = true;
+      }
+
+      startGame();
+    </script>
+  </body>
+</html>
