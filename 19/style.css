@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 2rem;
+}
+
+.team-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.team-selection label {
+  font-weight: bold;
+}
+
+.team-selection select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+.team-name-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.flag {
+  width: 50px;
+  height: 30px;
+}
+
+.flag.visible {
+  display: inline-block;
+}
+
+.score {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.main {
+  background-color: #007bff;
+  color: white;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.btn.main:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.btn.reset {
+  background-color: #dc3545;
+  color: white;
+  align-self: center;
+}
+
+.btn.reset:hover {
+  background-color: #a71d2a;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .panel {
+    gap: 3rem;
+  }
+
+  .scoreboard {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .team {
+    max-width: 100%;
+  }
+
+  .team-name {
+    font-size: 1rem;
+  }
+
+  .score {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-selection {
+    gap: 0.5rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .flag {
+    width: 40px;
+    height: 25px;
+  }
+
+  .score {
+    font-size: 2rem;
+  }
+}

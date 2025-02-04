@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Symptom Checker</h1>
+
+    <div class="symptoms">
+      <div id="symptomForm">
+        <label for="symptoms">Enter your symptoms:</label>
+        <textarea id="symptoms" placeholder="e.g. fever, cough"></textarea>
+        <button id="checkButton">Check</button>
+        <button id="refreshButton">Refresh</button>
+      </div>
+
+      <div id="enteredSymptoms">
+        <h3>Entered Symptoms:</h3>
+        <ul id="symptomList"></ul>
+      </div>
+    </div>
+
+    <div id="results">
+      <h2>Possible Diseases:</h2>
+      <ul id="diseaseList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

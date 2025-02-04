@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg",
+        "rating": "4.2",
+        "publishedDate": "1960-07-11",
+        "description": "A novel about the injustices of the American South.",
+        "publisher": "J.B. Lippincott & Co.",
+        "category": "Fiction",
+        "price": 10.99
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+        "rating": "4.1",
+        "publishedDate": "1949-06-08",
+        "description": "A dystopian novel about totalitarian surveillance.",
+        "publisher": "Secker & Warburg",
+        "category": "Dystopian",
+        "price": 12.99
+    },
+    {
+        "id": 3,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681804503i/129915654.jpg",
+        "rating": "4.2",
+        "publishedDate": "1813-01-28",
+        "description": "A romantic novel about class and manners.",
+        "publisher": "T. Egerton",
+        "category": "Romance",
+        "price": 9.99
+    },
+    {
+        "id": 4,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650033243i/41733839.jpg",
+        "rating": "3.9",
+        "publishedDate": "1925-04-10",
+        "description": "A story of love and ambition in the Jazz Age.",
+        "publisher": "Charles Scribner's Sons",
+        "category": "Fiction",
+        "price": 11.99
+    },
+    {
+        "id": 5,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327940656i/153747.jpg",
+        "rating": "3.5",
+        "publishedDate": "1851-10-18",
+        "description": "An epic tale of obsession and revenge.",
+        "publisher": "Harper & Brothers",
+        "category": "Adventure",
+        "price": 8.99
+    },
+    {
+        "id": 6,
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1413215930i/656.jpg",
+        "rating": "4.1",
+        "publishedDate": "1869-01-01",
+        "description": "A historical novel about Russian society during the Napoleonic Era.",
+        "publisher": "The Russian Messenger",
+        "category": "Historical Fiction",
+        "price": 15.99
+    },
+    {
+        "id": 7,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg",
+        "rating": "3.8",
+        "publishedDate": "1951-07-16",
+        "description": "A story of teenage rebellion and alienation.",
+        "publisher": "Little, Brown and Company",
+        "category": "Fiction",
+        "price": 10.99
+    },
+    {
+        "id": 8,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1371834025i/17157681.jpg",
+        "rating": "4.3",
+        "publishedDate": "1937-09-21",
+        "description": "A fantasy adventure of a reluctant hero.",
+        "publisher": "George Allen & Unwin",
+        "category": "Fantasy",
+        "price": 13.99
+    },
+    {
+        "id": 9,
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598823299i/42844155.jpg",
+        "rating": "4.4",
+        "publishedDate": "1997-06-26",
+        "description": "The magical journey of a young wizard.",
+        "publisher": "Bloomsbury",
+        "category": "Fantasy",
+        "price": 14.99
+    },
+    {
+        "id": 10,
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg",
+        "rating": "4.5",
+        "publishedDate": "1954-07-29",
+        "description": "An epic saga of good versus evil.",
+        "publisher": "George Allen & Unwin",
+        "category": "Fantasy",
+        "price": 16.99
+    }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Small Library Catalog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Small Library Catalog</h1>
+
+    <div id="bookList"></div>
+
+    <div id="loanSection" style="display: none">
+      <h2>Loan Book</h2>
+      <label for="memberId">Member ID:</label>
+      <input type="text" id="memberId" /><br />
+      <select id="bookSelect"></select
+      ><br />
+      <button onclick="loanBook()">Loan</button>
+      <div id="loanMessage"></div>
+    </div>
+
+    <div id="loanedBooksList">
+      <h2>Loaned Books</h2>
+      <ul id="loanedList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

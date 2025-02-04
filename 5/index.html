@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Utility Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  </head>
+  <body>
+    <h1>Home Utility Tracker</h1>
+
+    <div id="add-utility-form">
+      <form>
+        <h2>Add New Utility</h2>
+        <div class="form-group">
+          <label for="service-name">Service Name:</label>
+          <select id="service-name" name="service-name" required>
+            <option value="">Select a service</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Gas">Gas</option>
+            <option value="Water">Water</option>
+            <option value="Internet">Internet</option>
+            <option value="Cable TV">Cable TV</option>
+            <option value="Waste Management">Waste Management</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" id="other-service" name="other-service" placeholder="Enter service name" style="display: none;" />
+        </div>
+        <div class="form-group">
+          <label for="utility-type">Type:</label>
+          <select id="utility-type" name="utility-type" required>
+            <option value="">Select a type</option>
+            <option value="Energy">Energy</option>
+            <option value="Water">Water</option>
+            <option value="Internet">Internet</option>
+            <option value="TV">TV</option>
+            <option value="Waste">Waste</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" id="other-type" name="other-type" placeholder="Enter utility type" style="display: none;" />
+        </div>
+        <div class="form-group">
+          <label for="period">Period:</label>
+          <input type="month" id="period" name="period" required />
+          <small class="form-help">Select the month and year for this utility bill</small>
+        </div>
+        <div class="form-group">
+          <label for="cost">Cost ($):</label>
+          <input type="number" id="cost" name="cost" step="0.01" min="0" required />
+          <small class="form-help">Enter the total cost for this period</small>
+        </div>
+        <button type="submit">Add Utility</button>
+      </form>
+    </div>
+
+    <section id="search-utility">
+      <input type="text" id="search-input" placeholder="Search utilities..." />
+      <button onclick="searchUtility()">Search</button>
+    </section>
+
+    <div id="chart-controls">
+      <div class="view-controls">
+        <button onclick="createUtilityChart(matchingUtilities)">Individual View</button>
+        <button onclick="createUtilityChart(matchingUtilities, 'type')">By Type</button>
+        <button onclick="createUtilityChart(matchingUtilities, 'cumulative')">Cumulative View</button>
+      </div>
+      
+      <div id="utility-selector" class="utility-selector">
+        <h3>Group Utilities</h3>
+        <div id="utility-checkboxes" class="checkbox-group">
+          <!-- Checkboxes will be added dynamically -->
+        </div>
+        <div class="group-actions">
+          <button onclick="selectAllUtilities()">Select All</button>
+          <button onclick="deselectAllUtilities()">Deselect All</button>
+          <button onclick="showSelectedUtilities()" class="primary">Show Selected</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="summary-section">
+      <div class="summary-card">
+        <h3>Monthly Average</h3>
+        <p id="monthly-average">$0.00</p>
+      </div>
+      <div class="summary-card">
+        <h3>Total Costs</h3>
+        <p id="total-costs">$0.00</p>
+      </div>
+      <div class="summary-card">
+        <h3>Highest Bill</h3>
+        <p id="highest-bill">$0.00</p>
+      </div>
+    </div>
+
+    <table id="utility-table">
+      <thead>
+        <tr>
+          <th>Utility</th>
+          <th>Type</th>
+          <th>Period</th>
+          <th>Cost</th>
+          <th>Change</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="chart-container">
+      <canvas id="utility-chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

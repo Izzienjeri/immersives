@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "bookId": 10,
+        "name": "John Doe",
+        "rating": 4,
+        "comment": "Great book! I highly recommend it."
+    },
+    {
+        "id": 2,
+        "bookId": 1,
+        "name": "Jane Doe",
+        "rating": 5,
+        "comment": "One of my favorite books of all time."
+    },
+    {
+        "id": 3,
+        "bookId": 4,
+        "name": "John Doe",
+        "rating": 2,
+        "comment": "Not as good as I expected."
+    },
+    {
+        "id": 4,
+        "bookId": 4,
+        "name": "Jane Doe",
+        "rating": 3,
+        "comment": "The writing style was interesting."
+    }
+]

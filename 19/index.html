@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="team-selection">
+        <label for="team1">Team 1:</label>
+        <select id="team1">
+          <option value="">Select a team</option>
+          <option value="arg">Argentina</option>
+          <option value="br">Brasil</option>
+        </select>
+        <label for="team2">Team 2:</label>
+        <select id="team2">
+          <option value="">Select a team</option>
+          <option value="arg">Argentina</option>
+          <option value="br">Brasil</option>
+        </select>
+      </section>
+      <section class="panel">
+        <article class="scoreboard">
+          <div class="team team-1">
+            <div class="team-name-container">
+              <img src="" alt="Team 1 Flag" class="flag" />
+              <h2 class="team-name">Team 1</h2>
+            </div>
+            <span class="score">0</span>
+            <button class="btn main goal-add-button">+</button>
+            <button class="btn main goal-remove-button">-</button>
+          </div>
+          <div class="team team-2">
+            <div class="team-name-container">
+              <img src="" alt="Team 2 Flag" class="flag" />
+              <h2 class="team-name">Team 2</h2>
+            </div>
+            <span class="score">0</span>
+            <button class="btn main goal-add-button">+</button>
+            <button class="btn main goal-remove-button">-</button>
+          </div>
+        </article>
+        <button class="btn reset reset-button">Reset</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

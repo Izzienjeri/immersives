@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-section">
+            <h1>Timer App</h1>
+        </div>
+
+        <div id="input-section" class="input-section">
+            <input type="number" id="timer-duration" placeholder="Duration (seconds)">
+            <input type="text" id="timer-label" placeholder="Label (optional)">
+            <button id="start-timer">Start</button>
+        </div>
+
+        <div id="timer-section" class="timer-section hidden">
+            <div class="timer-display">
+                <span id="timer-time">00:00</span>
+            </div>
+            <div id="label-display" class="label-display hidden"></div>
+            <div class="timer-controls">
+                <button id="stop-timer">Stop</button>
+                <button id="restart-timer">Restart</button>
+                <button id="back-button">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bill Splitting App</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>Bill Splitter</h1>
+		<p>
+			<strong>Instructions:</strong><br />
+			1. Enter each friend's name and the amount they already spent (e.g., <code>John:10.50, Jane:25.00, Mike:0</code>).<br />
+			2. Enter shared expenses as a comma-separated list (e.g., <code>50.00, 30.00</code>).<br />
+			3. Click "Calculate" to see the results.
+		</p>
+		<form id="bill-form">
+			<div class="input-group">
+				<label for="friends-expenses">Friends and Their Expenses:</label>
+				<input
+					type="text"
+					id="friends-expenses"
+					placeholder="e.g., John:10.50, Jane:25.00, Mike:0"
+					required
+				/>
+			</div>
+			<div class="input-group">
+				<label for="general-expenses">General Expenses:</label>
+				<input
+					type="text"
+					id="general-expenses"
+					placeholder="e.g., 50.00, 30.00"
+					required
+				/>
+			</div>
+			<button type="submit">Calculate</button>
+		</form>
+		<div id="results">
+			<h2>Results:</h2>
+			<ul></ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

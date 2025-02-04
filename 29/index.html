@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wheel">
+      <div
+        class="wheel-segment"
+        data-breed="Maine Coon"
+        data-description="Gentle giants with flowing coats and playful personalities."
+        data-img="maine-coon.jpg"
+      >
+        <div class="segment-content">Maine Coon</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Persian"
+        data-description="Elegant and affectionate cats with long, luxurious fur."
+        data-img="persian.jpg"
+      >
+        <div class="segment-content">Persian</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Bengal"
+        data-description="Energetic and playful cats with striking, exotic patterns."
+        data-img="bengal.jpg"
+      >
+        <div class="segment-content">Bengal</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Ragdoll"
+        data-description="Large, docile cats known for their floppy limbs and relaxed nature."
+        data-img="ragdoll.jpg"
+      >
+        <div class="segment-content">Ragdoll</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Siamese"
+        data-description="Intelligent and vocal cats with distinctive pointed markings."
+        data-img="siamese.jpg"
+      >
+        <div class="segment-content">Siamese</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="British Shorthair"
+        data-description="Calm and affectionate cats with plush coats and round faces."
+        data-img="british-shorthair.jpg"
+      >
+        <div class="segment-content">British Shorthair</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Sphynx"
+        data-description="Hairless cats with playful and affectionate personalities."
+        data-img="sphynx.jpg"
+      >
+        <div class="segment-content">Sphynx</div>
+      </div>
+      <div
+        class="wheel-segment"
+        data-breed="Abyssinian"
+        data-description="Active and intelligent cats with a distinctive ticked tabby coat."
+        data-img="abyssinian.jpg"
+      >
+        <div class="segment-content">Abyssinian</div>
+      </div>
+    </div>
+    <button id="spinButton">Spin the Wheel</button>
+    <div id="selectedCatInfo">
+      <img id="selectedImage" src="" alt="Selected Cat" />
+      <h3 id="selectedBreed"></h3>
+      <p id="selectedDescription"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

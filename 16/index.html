@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="info">
+        <button id="startButton">Start Game</button>
+        <p>
+          Use <strong>W</strong> (up), <strong>A</strong> (left),
+          <strong>S</strong> (down), <strong>D</strong> (right) to control the
+          snake.
+        </p>
+        <p>Score: <span id="score">0</span></p>
+        <div id="gameOverMessage" style="display: none">
+          <p>Game Over! Your score: <span id="finalScore">0</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

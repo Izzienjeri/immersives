@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rate a Sauce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Rate a Sauce</h1>
+    </nav>
+
+    <div id="sauce-list" class="container"></div>
+
+    <h2>Add a New Sauce</h2>
+    <form id="new-sauce-form">
+        <div class="form-group">
+            <label for="sauce-name">Sauce Name:</label>
+            <input type="text" id="sauce-name" name="sauce-name" required>
+        </div>
+        <div class="form-group">
+            <label for="sauce-rating">Heat Rating (1-10):</label>
+            <input type="number" id="sauce-rating" name="heat-rating" min="1" max="10" required>
+        </div>
+        <div class="form-group">
+            <label for="tags">Tags (comma-separated):</label>
+            <input type="text" id="tags" name="tags" required>
+        </div>
+
+        <button type="submit">Add Sauce</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

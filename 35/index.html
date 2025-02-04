@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <h1>JSON Formatter</h1>
+      </header>
+      <main class="content">
+        <section class="container">
+          <div class="panel" id="inputPanel">
+            <h2 class="panel-title">Input</h2>
+            <textarea
+              id="jsonInput"
+              placeholder="Enter your poorly formatted JSON..."
+            ></textarea>
+          </div>
+          <div class="panel" id="outputPanel">
+            <h2 class="panel-title">Output</h2>
+            <textarea id="jsonOutput" readonly></textarea>
+          </div>
+        </section>
+        <button id="formatButton" onclick="formatJSON()">Format</button>
+      </main>
+      <footer class="page-footer">
+        <p>© 2025 JSON Formatter. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

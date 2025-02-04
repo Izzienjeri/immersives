@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monty Hall Problem</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .door.disabled {
+        pointer-events: none;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Monty Hall Game</h1>
+    <div id="doors">
+      <div class="door" id="door1"></div>
+      <div class="door" id="door2"></div>
+      <div class="door" id="door3"></div>
+    </div>
+    <button id="resetButton">End Game</button>
+    <p>Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></p>
+    <script src="script.js"></script>
+  </body>
+</html>

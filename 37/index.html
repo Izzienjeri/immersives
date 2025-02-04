@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Event Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Virtual Event Planner</h1>
+
+    <div class="event-form">
+      <label for="event-name">Event Name:</label>
+      <input type="text" id="event-name" />
+
+      <label for="event-date">Date:</label>
+      <input type="date" id="event-date" />
+
+      <button id="add-event">Add Event</button>
+    </div>
+    <div class="parent-bar">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search events..." />
+      </div>
+
+      <div class="filter-bar">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" placeholder="Start Date" />
+      
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" placeholder="End Date" />
+      </div>      
+    </div>
+
+    <div class="event-list">
+      <h2>Upcoming Events</h2>
+      <ul id="event-items"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

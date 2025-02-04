@@ -1,0 +1,49 @@
+body {
+  font-family: "Press Start 2P", monospace;
+  background-color: #222;
+  color: #0f0;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #ff0;
+  margin-bottom: 20px;
+}
+
+#gameSelect {
+  background-color: #0f0;
+  color: #222;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#gameInfo {
+  border: 2px solid #0f0;
+  padding: 10px;
+  display: none;
+  margin-top: 2rem;
+}
+
+#gameInstructions {
+  list-style: none;
+  padding: 0;
+}
+
+#favoriteButton {
+  background-color: #0f0;
+  color: #222;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#favoriteButton.favorited {
+  background-color: #ff0;
+}

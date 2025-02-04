@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coding Kids Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Coding Kids!</h1>
+    </header>
+
+    <main>
+      <div id="auth-section" class="card">
+        <h2>Login or Register</h2>
+        <form id="auth-form">
+          <input type="text" id="username" placeholder="Username" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <div class="button-group">
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="register()">Register</button>
+          </div>
+        </form>
+        <p id="auth-message" class="message"></p>
+      </div>
+
+      <div id="game-section" class="hidden">
+        <div class="user-info">
+          <span id="welcome-message"></span>
+          <button onclick="logout()">Logout</button>
+        </div>
+        <div class="card">
+          <h2>Select a Game</h2>
+          <div class="button-group">
+            <button onclick="openGame('game1')">Fill in the Blank</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="game1" class="hidden">
+        <div class="user-info">
+          <button onclick="backToGames()">← Back to Games</button>
+        </div>
+        <div class="card">
+          <h2>Fill in the Blank</h2>
+          <p class="challenge" id="challenge-text"></p>
+          <div id="options" class="options"></div>
+          <button id="submit-answer" onclick="checkAnswer()" disabled>
+            Submit
+          </button>
+          <p id="feedback" class="message"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

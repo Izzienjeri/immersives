@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Puzzles for Kids</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Coding Puzzles For Kids</h1>
+      <p>Complete the puzzle to learn how code works!</p>
+    </header>
+
+    <main>
+      <div class="quiz-card">
+        <h2>Fill in the blank to know how coding works!</h2>
+        <div id="puzzle">
+          <p>Complete the question:</p>
+          <p id="question"></p>
+          <label for="answer" aria-label="Your answer input"
+            >Your answer:</label
+          >
+          <input type="text" id="answer" placeholder="Enter your answer" />
+          <button onclick="checkAnswer()" aria-label="Check your answer">
+            Check Answer
+          </button>
+          <p id="feedback"></p>
+          <button
+            id="nextQuestion"
+            onclick="nextQuestion()"
+            style="display: none"
+            aria-label="Next question"
+          >
+            Next Question
+          </button>
+          <button
+            id="refresh"
+            onclick="refreshPage()"
+            style="display: none"
+            aria-label="Restart quiz"
+          >
+            Restart Quiz
+          </button>
+        </div>
+        <p id="result" style="display: none"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Have Fun Coding</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 150px;
+  height: auto;
+}
+
+#loanSection {
+  background-color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loanSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+#loanSection label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+#loanSection input,
+#loanSection select {
+  padding: 8px;
+  font-size: 1rem;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#loanSection button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#loanMessage {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+#loanedBooksList {
+  margin-top: 40px;
+}
+
+#loanedBooksList h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+#loanedBooksList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#loanedBooksList li {
+  background-color: white;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

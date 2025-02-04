@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="number"] {
+  width: 120px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#countdown {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.inhale {
+  color: #007bff;
+}
+
+.exhale {
+  color: #dc3545;
+}
+
+.countdown_block {
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 1em;
+  font-size: 2em;
+}

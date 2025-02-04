@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Doodle JAM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Real-Time Doodle JAM</h1>
+      <div id="session-controls">
+        <button id="createSession">Create Session</button>
+        <input type="text" id="sessionKey" placeholder="Enter Session Key" />
+        <button id="joinSession">Join Session</button>
+      </div>
+      <canvas id="myCanvas" width="700" height="500"></canvas>
+      <div id="controls">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#000000" />
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="50" value="5" />
+        <button id="clearCanvas" onclick="clearCanvas()">Clear Canvas</button>
+      </div>
+      <div id="notification-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

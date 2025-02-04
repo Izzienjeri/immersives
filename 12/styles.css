@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #48a5e3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+  background-color: #2980b9;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+.user-info button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #e74c3c;
+}
+
+.user-info button:hover {
+  background-color: #c0392b;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.message {
+  color: #e74c3c;
+}
+
+.message.success {
+  color: #2ecc71;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.options button {
+  width: 100%;
+}
+
+.options button.selected {
+  background-color: #21d0ca;
+  color: white;
+}
+
+.challenge {
+  font-size: 18px;
+  margin-bottom: 20px;
+}

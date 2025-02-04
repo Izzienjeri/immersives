@@ -1,0 +1,163 @@
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  color: #f00;
+}
+
+.player-inputs {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+}
+
+.player-inputs .row {
+  margin-bottom: 15px;
+}
+
+.player-inputs select {
+  padding: 8px 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.player-inputs select option {
+  padding: 8px;
+}
+
+.player-inputs input:focus,
+.player-inputs select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(7, 70px);
+  grid-template-rows: repeat(6, 70px);
+  border: 2px solid black;
+  background-image: linear-gradient(
+    to right,
+    #00000033 0%,
+    #00000000 50%,
+    #00000033 100%
+  );
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+.cell.red {
+  background-color: red;
+  box-shadow: 0 0 5px red;
+}
+
+.cell.yellow {
+  background-color: yellow;
+  box-shadow: 0 0 5px yellow;
+}
+
+#start-game {
+  background-color: #007bff;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+#start-game:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.game-status {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.current-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.player-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.game-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+.game-message.success {
+  background-color: #28a745;
+}
+
+.game-message.warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.game-message.info {
+  background-color: #17a2b8;
+}

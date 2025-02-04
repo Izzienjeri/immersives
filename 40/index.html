@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breathing Exercise App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Breathing Exercise</h2>
+      <input
+        type="number"
+        id="inhaleTime"
+        placeholder="Inhale (seconds)"
+        min="1"
+      />
+      <input
+        type="number"
+        id="exhaleTime"
+        placeholder="Exhale (seconds)"
+        min="1"
+      />
+      <button id="startButton">Start</button>
+      <button id="pauseButton" disabled>Pause</button>
+      <div class="countdown_block">
+        <div id="currentProcess" class="inhale"></div>
+        <div id="countdown"></div>
+        <button id="resetButton" disabled>Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

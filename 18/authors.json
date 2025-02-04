@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Harper Lee",
+        "bio": "Harper Lee was an American novelist widely known for To Kill a Mockingbird.",
+        "dateOfBirth": "1926-04-28",
+        "books": [1],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Photo_portrait_of_Harper_Lee_%28To_Kill_a_Mockingbird_dust_jacket%2C_1960%29.jpg"
+    },
+    {
+        "id": 2,
+        "name": "George Orwell",
+        "bio": "George Orwell was an English novelist, essayist, journalist, and critic.",
+        "dateOfBirth": "1903-06-25",
+        "books": [2],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/George_Orwell_press_photo.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Jane Austen",
+        "bio": "Jane Austen was an English novelist known primarily for her six major novels.",
+        "dateOfBirth": "1775-12-16",
+        "books": [3],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/CassandraAusten-JaneAusten%28c.1810%29"
+    },
+    {
+        "id": 4,
+        "name": "F. Scott Fitzgerald",
+        "bio": "F. Scott Fitzgerald was an American novelist and short story writer.",
+        "dateOfBirth": "1896-09-24",
+        "books": [4],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/F_Scott_Fitzgerald_1921.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Herman Melville",
+        "bio": "Herman Melville was an American novelist, short story writer, and poet.",
+        "dateOfBirth": "1819-08-01",
+        "books": [5],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Herman_Melville_by"
+    },
+    {
+        "id": 6,
+        "name": "Leo Tolstoy",
+        "bio": "Leo Tolstoy was a Russian writer who is regarded as one of the greatest authors of all time.",
+        "dateOfBirth": "1828-09-09",
+        "books": [6],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Leo_Tolstoy_1897%2C_black_and_white%2C_75dpi.jpg"
+    },
+    {
+        "id": 7,
+        "name": "J.D. Salinger",
+        "bio": "J.D. Salinger was an American writer known for his widely read novel, The Catcher in the Rye.",
+        "dateOfBirth": "1919-01-01",
+        "books": [7],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/J._D._Salinger.jpg"
+    },
+    {
+        "id": 8,
+        "name": "J.R.R. Tolkien",
+        "bio": "J.R.R. Tolkien was an English writer, poet, philologist, and academic.",
+        "dateOfBirth": "1892-01-03",
+        "books": [8, 10],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg/800px-J._R._R._Tolkien%2C_ca._1925.jpg"
+    },
+    {
+        "id": 9,
+        "name": "J.K. Rowling",
+        "bio": "J.K. Rowling is a British author, best known for writing the Harry Potter fantasy series.",
+        "dateOfBirth": "1965-07-31",
+        "books": [9],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg"
+    }
+]

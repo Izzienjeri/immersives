@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Progress Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>My Game Library</h1>
+      <div id="search-filter">
+        <input type="text" id="search-bar" placeholder="Search by title..." />
+        <select id="console-filter">
+          <option value="">All Consoles</option>
+          <option value="PS5">PlayStation 5</option>
+          <option value="Xbox Series X">Xbox Series X</option>
+          <option value="Nintendo Switch">Nintendo Switch</option>
+        </select>
+      </div>
+      <div id="game-list"></div>
+      <div id="add-game-form">
+        <h2>Register a New Game</h2>
+        <form id="game-registration-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="release-date">Release Date:</label>
+          <input type="date" id="release-date" name="release-date" required />
+
+          <label for="console">Console:</label>
+          <select id="console" name="console">
+            <option value="">Select Console</option>
+            <option value="PS5">PlayStation 5</option>
+            <option value="Xbox Series X">Xbox Series X</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+          </select>
+
+          <label for="current-level">Current Level:</label>
+          <input
+            type="number"
+            id="current-level"
+            name="current-level"
+            min="0"
+          />
+
+          <label for="total-levels">Total Levels:</label>
+          <input type="number" id="total-levels" name="total-levels" min="1" />
+
+          <input type="submit" value="Add Game" />
+        </form>
+      </div>
+      <div id="edit-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">×</span>
+          <h2>Edit Game</h2>
+          <form id="edit-game-form">
+            <input type="hidden" id="edit-game-id" />
+            <label for="edit-title">Title:</label>
+            <input type="text" id="edit-title" name="edit-title" required />
+
+            <label for="edit-release-date">Release Date:</label>
+            <input
+              type="date"
+              id="edit-release-date"
+              name="edit-release-date"
+              required
+            />
+
+            <label for="edit-console">Console:</label>
+            <select id="edit-console" name="edit-console">
+              <option value="">Select Console</option>
+              <option value="PS5">PlayStation 5</option>
+              <option value="Xbox Series X">Xbox Series X</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+            </select>
+
+            <label for="edit-current-level">Current Level:</label>
+            <input
+              type="number"
+              id="edit-current-level"
+              name="edit-current-level"
+              min="0"
+            />
+
+            <label for="edit-total-levels">Total Levels:</label>
+            <input
+              type="number"
+              id="edit-total-levels"
+              name="edit-total-levels"
+              min="1"
+            />
+
+            <input type="submit" value="Update Game" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

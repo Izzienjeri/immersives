@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.symptoms {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-size: 14px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#enteredSymptoms {
+  margin-top: 20px;
+}
+
+#enteredSymptoms h3 {
+  margin-bottom: 10px;
+}
+
+#enteredSymptoms ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#enteredSymptoms li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #e9ecef;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #495057;
+}
+
+#results {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#results h2 {
+  margin-bottom: 15px;
+  color: #0056b3;
+}
+
+#diseaseList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#diseaseList li {
+  padding: 8px 10px;
+  background-color: #f8f9fa;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  color: #343a40;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}

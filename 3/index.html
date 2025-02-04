@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant-Based Recipe Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Plant-Based Recipes</h1>
+      <nav>
+        <ul>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#meal-planning">Meal Planning</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="user-ingredients">
+      <h2>Enter Ingredients</h2>
+      <form id="ingredient-form">
+        <label for="ingredients">Ingredients (comma separated):</label>
+        <input type="text" id="ingredients" name="ingredients" required />
+        <button type="submit">Find Recipes</button>
+      </form>
+    </section>
+
+    <section style="display:none" id="recipes">
+      <h2>Featured Recipes</h2>
+    </section>
+
+    <section id="meal-planning">
+      <h2>Meal Planning Tools</h2>
+      <button id="generate-plan">Generate Meal Plan</button>
+      <div id="meal-plan"></div>
+    </section>
+
+		<section id="benefits">
+			<h2>Benefits of Plant-Based Diet</h2>
+			<ul>
+				<li>
+					<span class="benefit-icon">🌱</span>
+					<span class="benefit-text"
+						>Improved heart health: Lower cholesterol and blood
+						pressure.</span
+					>
+				</li>
+				<li>
+					<span class="benefit-icon">⚖️</span>
+					<span class="benefit-text"
+						>Weight management: Promote healthy weight and reduce
+						risk of obesity.</span
+					>
+				</li>
+				<li>
+					<span class="benefit-icon">🛡️</span>
+					<span class="benefit-text"
+						>Reduced risk of chronic diseases: May lower risk of
+						type 2 diabetes and certain cancers.</span
+					>
+				</li>
+				<li>
+					<span class="benefit-icon">🌍</span>
+					<span class="benefit-text"
+						>Environmental benefits: Reduce your carbon footprint
+						and conserve water resources.</span
+					>
+				</li>
+				<li>
+					<span class="benefit-icon">❤️</span>
+					<span class="benefit-text"
+						>Animal welfare: Choose a compassionate lifestyle that
+						aligns with ethical values.</span
+					>
+				</li>
+			</ul>
+		</section>
+
+		<footer>
+			<p>© 2023 Plant-Based Recipes</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

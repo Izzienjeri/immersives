@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="inline-header">
+      <a id="home-link" href="index.html"><h1>Bookstore</h1> </a>
+      <a id="cart-link" href="cart.html"><h1>Cart</h1> </a>
+    </header>
+    <div id="book-details">
+      <img id="book-cover" src="" alt="" />
+
+      <div id="book">
+        <div id="book-info">
+          <h1 id="book-title"></h1>
+          <p>By <a id="book-author" href=""></a></p>
+          <p id="book-description"></p>
+
+          <p id="book-category"></p>
+          <p id="book-rating"></p>
+          <p id="book-price"></p>
+
+          <button id="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div id="book-reviews">
+          <h2>Reviews</h2>
+          <div id="book-reviews-list"></div>
+
+          <h2>Add a review</h2>
+          <form id="review-form">
+            <div id="review-form-fields">
+              <label for="reviewer-name">Name:</label>
+              <input
+                type="text"
+                id="review-name"
+                name="reviewer-name"
+                required
+              />
+
+              <label for="review-rating">Rating:</label>
+              <input
+                type="number"
+                id="review-rating"
+                name="review-rating"
+                min="1"
+                max="5"
+                required
+              />
+
+              <label for="review-content">Review:</label>
+              <textarea
+                id="review-content"
+                name="review-content"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="book.js"></script>
+  </body>
+</html>

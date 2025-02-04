@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Organizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Organizer</h1>
+        <div class="columns">
+            <div class="column" id="todo">
+                <h2>To Do</h2>
+                <ul id="todo-list">
+                    <li draggable="true">Finish project report</li>
+                    <li draggable="true">Schedule team meeting</li>
+                </ul>
+            </div>
+
+            <div class="column" id="inprogress">
+                <h2>In Progress</h2>
+                <ul id="inprogress-list">
+                    <li draggable="true">Write code for feature X</li>
+                </ul>
+            </div>
+
+            <div class="column" id="done">
+                <h2>Done</h2>
+                <ul id="done-list">
+                    <li draggable="true">Completed design mockups</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="new-task-input" placeholder="Task name..." required />
+            <input type="text" id="new-task-description" placeholder="Task description..." required />
+            <select id="new-task-priority" required>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="add-task-button">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
